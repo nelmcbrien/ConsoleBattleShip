@@ -17,7 +17,7 @@ public class Logic {
     /**
      * 
      * @param board 
-     * Populates the board with all O's at the start of the game.
+     * Populates the board with all O's(letter) at the start of the game.
      */
     public static void populateBoard(String [][] board){
         for(int i=0; i < 5; i++){
