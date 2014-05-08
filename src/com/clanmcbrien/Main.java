@@ -26,12 +26,10 @@ public class Main {
        Boolean run = true;
        
        while(run){
-           
-           /*for(int i = 0; i < 21; i++){
-               System.out.println();
-           }*/
+                      
            Logic.printBoard(board);
            String shotFired = Logic.nextShot();
+           
            if(shotFired.equals(ship)){
                System.out.println("Direct Hit!!!");
                System.out.println("You Win!!!");
@@ -39,7 +37,6 @@ public class Main {
            }else{
                System.out.println("Miss...");
                
-
                //TODO All this is debuging console output, remove later-BLN
                int x = Character.getNumericValue(shotFired.charAt(0));
                int y = Character.getNumericValue(shotFired.charAt(1));
