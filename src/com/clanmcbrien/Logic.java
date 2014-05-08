@@ -87,9 +87,13 @@ public class Logic {
     }
     
     public static boolean shotHit(int shots){
+        //increment the last shot taken.
+        shots += 1;
+        //Congratulate the winner and tell them their score.
         System.out.println("Direct Hit!!!");
         System.out.println("You Win!!!");
         System.out.println("You completed the game in " + shots + " shots!!!");
+        //tell the while loop in main the game is over.
         return false;        
     }
 }
