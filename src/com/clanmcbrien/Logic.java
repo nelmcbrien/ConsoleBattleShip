@@ -85,4 +85,11 @@ public class Logic {
         System.out.println();
         return shots;        
     }
+    
+    public static boolean shotHit(int shots){
+        System.out.println("Direct Hit!!!");
+        System.out.println("You Win!!!");
+        System.out.println("You completed the game in " + shots + " shots!!!");
+        return false;        
+    }
 }

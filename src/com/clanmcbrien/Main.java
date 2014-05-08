@@ -33,9 +33,7 @@ public class Main {
            String shotFired = Logic.nextShot();
            
            if(shotFired.equals(ship)){
-               System.out.println("Direct Hit!!!");
-               System.out.println("You Win!!!");
-               run = false;
+               run = Logic.shotHit(shots);
            }else{
                System.out.println("Miss...");
                
