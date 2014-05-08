@@ -6,8 +6,8 @@
 
 package com.clanmcbrien;
 
-import java.io.IOException;
-import java.util.Scanner;
+
+
 
 /**
  *
@@ -26,7 +26,7 @@ public class Main {
        Boolean run = true;
        
        while(run){
-           int shots = 0;
+           
            /*for(int i = 0; i < 21; i++){
                System.out.println();
            }*/
@@ -38,6 +38,8 @@ public class Main {
                run = false;
            }else{
                System.out.println("Miss...");
+               
+
                //TODO All this is debuging console output, remove later-BLN
                int x = Character.getNumericValue(shotFired.charAt(0));
                int y = Character.getNumericValue(shotFired.charAt(1));
@@ -45,17 +47,11 @@ public class Main {
                board[x][y] = "X ";
                System.out.println(shotFired + " shot value(-1 from input)...");
                System.out.println(ship + " ship location...");
+               //TODO Remove all of the above later-BLN
                
-                //Increment shots and print
-               shots +=  1;
-               System.out.println("Shots: " + shots);
-           
-               //add some space in console
-               System.out.println();
-               System.out.println();
-           }           
-           
-           
+               Logic.shotMissed();
+                              
+           }
        }
     }
 }

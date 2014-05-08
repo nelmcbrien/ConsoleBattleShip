@@ -14,6 +14,8 @@ import java.util.Scanner;
  * @author bnelson
  */
 public class Logic {
+    static int shots = 0;
+    
     /**
      * 
      * @param board 
@@ -67,5 +69,16 @@ public class Logic {
     }
     
     //TODO-Miss method here-BLN
-    //public 
+    public static void shotMissed(){
+        System.out.println("Miss...");
+        shots += 1;                     
+        //Increment shots and print
+        System.out.println("Shots: " + shots);
+           
+        //add some space in console
+        System.out.println();
+        System.out.println();
+        
+        
+    }
 }
