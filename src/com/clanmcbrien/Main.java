@@ -20,6 +20,8 @@ public class Main {
         String[][] board;
         // initialize an array of Strings as "board"
         board = new String[5][5];
+        // declare and initialize the shots variable
+        int shots = 0;
         
        Logic.populateBoard(board);
        String ship = Logic.placeShip();
@@ -46,7 +48,8 @@ public class Main {
                System.out.println(ship + " ship location...");
                //TODO Remove all of the above later-BLN
                
-               Logic.shotMissed();
+               //Displays "miss" message and increments shots variable.
+               shots = Logic.shotMissed(shots);
                               
            }
        }

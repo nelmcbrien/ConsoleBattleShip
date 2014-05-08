@@ -14,7 +14,7 @@ import java.util.Scanner;
  * @author bnelson
  */
 public class Logic {
-    static int shots = 0;
+    //static int shots = 0;
     
     /**
      * 
@@ -43,6 +43,7 @@ public class Logic {
             System.out.println();
         }
     }
+    
     /**
      * Stores the ship coordinates so it does not show on board.
      * @return 
@@ -68,8 +69,12 @@ public class Logic {
         return x+y;
     }
     
-    //TODO-Miss method here-BLN
-    public static void shotMissed(){
+    /**
+     *  Displays the "miss" message and increments the number of shots.
+     * @param shots
+     * @return 
+     */
+    public static int shotMissed(int shots){
         System.out.println("Miss...");
         shots += 1;                     
         //Increment shots and print
@@ -78,7 +83,6 @@ public class Logic {
         //add some space in console
         System.out.println();
         System.out.println();
-        
-        
+        return shots;        
     }
 }
